@@ -200,6 +200,7 @@ let MonthView = React.createClass({
         {...this.props}
         eventComponent={this.props.components.event}
         onSelect={this.handleSelectEvent}
+        eventWrapperComponent={this.props.components.eventWrapper}
         key={idx}
         segments={segments}
         start={first}
@@ -218,6 +219,7 @@ let MonthView = React.createClass({
         {...this.props}
         eventComponent={this.props.components.event}
         onSelect={this.handleSelectEvent}
+        eventWrapperComponent={this.props.components.eventWrapper}
         onShowMore={onClick}
         key={'last_row_' + weekIdx}
         segments={extraSegments}
@@ -293,6 +295,7 @@ let MonthView = React.createClass({
         <Popup
           {...this.props}
           eventComponent={components.event}
+          eventWrapperComponent={components.eventWrapper}
           position={overlay.position}
           events={overlay.events}
           slotStart={overlay.date}
