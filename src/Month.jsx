@@ -185,6 +185,7 @@ let MonthView = React.createClass({
     <BackgroundCells
       slots={7}
       onSelectSlot={onSelectSlot}
+      backgroundWrapperComponent={this.props.components.backgroundWrapper}
       container={() => findDOMNode(this)}
       selectable={this.props.selectable}
       ref={r => this._bgRows[idx] = r}
