@@ -188,6 +188,8 @@ let MonthView = React.createClass({
       backgroundWrapperComponent={this.props.components.backgroundWrapper}
       container={() => findDOMNode(this)}
       selectable={this.props.selectable}
+      values={row}
+      type="Day"
       ref={r => this._bgRows[idx] = r}
     />
     )
